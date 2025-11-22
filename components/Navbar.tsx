@@ -11,7 +11,7 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     const navLinks = [
-        { href: "/home", label: "Home" },
+        { href: "/", label: "Home" },
         { href: "/about", label: "About" },
         { href: "/projects", label: "Projects" },
         { href: "/blog", label: "Blog" },
@@ -27,9 +27,11 @@ export default function Navbar() {
             <nav className="container mx-auto px-4 py-3">
                 <div className="flex items-center justify-between">
                     {/* Brand */}
+                   
                     <Link href="/" className="flex items-center gap-2">
+                    <Image src="/image.png" alt="logo" width={40} height={40} className="rounded-full w-10 h-10"/>
                       
-                        <span className="text-xl font-bold">Portfolio</span>
+                        <span className="text-lg"><span className="text-yellow-500">Coding</span> <span className="text-blue-500">Kh</span></span>
                     </Link>
 
                     {/* Desktop nav */}
